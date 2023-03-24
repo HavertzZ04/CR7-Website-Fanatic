@@ -17,7 +17,7 @@ export default {
         <p>${this.paragraftTwo}</p>
         <h2>${this.titleTwo}</h2>
         <p>${this.paragraftFour}</p>
-        <img src="img/cr7-sporting.jpg"  class="col-md-12" alt="" id="cr7-sporting">
+        <img src="img/cr7-sporting.jpg"  class="col-md-12 img-fluid" alt="" id="cr7-sporting">
         `);
     },
 
