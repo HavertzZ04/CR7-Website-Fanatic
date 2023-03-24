@@ -2,7 +2,7 @@ export default {
     nav: [
         {
             title: "Fun Fact",
-            paragraph: `With a total of <b>118 goals</b> for Portugal, Cristiano Ronaldo holds the record for <b>the highest international goalscorer</b>  among active male soccer players.`,
+            paragraph: `With a total of <b>120 goals</b> for Portugal, Cristiano Ronaldo holds the record for <b>the highest international goalscorer</b>  among active male soccer players.`,
         },
         {
             title: "Player Profile",

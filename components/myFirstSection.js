@@ -42,8 +42,6 @@ export default {
         document.querySelector("#underwearPhoto").style.backgroundImage = `url(${this.imageUnderwear})`;
         document.querySelector("#hotelPhoto").style.backgroundImage = `url(${this.imageHotel})`;
         document.querySelector("#museumPhoto").style.backgroundImage = `url(${this.imageMuseum})`;
-
-
     },
     
     showStore(){
