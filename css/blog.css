@@ -131,8 +131,12 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   margin-bottom: 1rem;
 }
 
-.table, .twitter{
+.table{
   margin-bottom: 4rem;
+}
+
+.twitter {
+  margin-bottom: 3rem;
 }
 
 #cr7-ball, #cr7-sporting, #alN {
