@@ -58,11 +58,11 @@ export default {
                     href: "https://en.wikipedia.org/wiki/Cristiano_Ronaldo#International"
                 }
             ]
-        },
-        
+        },       
         
     ],
 
+    
 
     showAside() {
         const data = this.nav.map((val, id) => {
@@ -91,5 +91,6 @@ export default {
             </ol>
         </div>
         `;
-    }
+        
+    },
 };

@@ -127,15 +127,15 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   padding: 0 0 0.7rem 0;
 }
 
-#cr7-ball {
+#cr7-ball, #cr7-asia{
   margin-bottom: 1rem;
 }
 
-.table {
+.table, .twitter{
   margin-bottom: 4rem;
 }
 
-#cr7-ball, #cr7-sporting {
+#cr7-ball, #cr7-sporting, #alN {
   border-radius: 0.2rem;
 }
 
@@ -145,3 +145,11 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
   align-items: center; /* Centrar verticalmente */
 }
 
+
+footer {
+  margin-top: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
