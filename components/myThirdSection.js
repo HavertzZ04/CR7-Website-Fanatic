@@ -53,6 +53,6 @@ export default {
         <img src="${this.image}" class="col-md-12 img-fluid" alt="" id="cr7-ball">
         <p>${this.paragraftThree}</p>
         
-        `)
+        ` )
     },
 }
