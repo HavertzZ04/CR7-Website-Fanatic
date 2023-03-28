@@ -1,4 +1,4 @@
-export let wsMyBanner = {
+let wsMyBanner = {
     dataList(e){
         return`
         <h1 class="display-4 ">${e.title}</h1>
