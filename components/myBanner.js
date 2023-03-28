@@ -1,7 +1,7 @@
 export default {
 
     datas : {
-        image: "/img/cr7-banner.jpg",
+        image: "img/cr7-banner.jpg",
         title: "Cristiano Ronaldo",
         description: "CR7 is a Portuguese professional soccer player. He has won five Ballon d'Or awards and numerous other accolades, and is considered one of the greatest players of all time.",
         link: "Continue reading...",
