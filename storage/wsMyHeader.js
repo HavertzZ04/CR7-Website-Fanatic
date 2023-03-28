@@ -1,4 +1,4 @@
-export let wsMyHeader = {
+let wsMyHeader = {
     listTeams(p1){
         let template = "";
         p1.forEach((val, id) => {
