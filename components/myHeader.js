@@ -34,12 +34,20 @@ export default {
         document.querySelector("#title").insertAdjacentHTML("beforeend", `<h1 class="text-center">${this.title.name}</h1>`);
     },
 
-    listarTeams(){
-        let template = "";
-        this.teams.forEach((val, id) => {
-            template += `<a class="p-2 link-secondary" href="${val.href}" target="blank">${val.name}</a>`
-        });
-        document.querySelector("#teams").insertAdjacentHTML("beforeend", template);
+
+
+    Show(){ //Create tge worker
+        const ws = new Worker("storage/wsMyHeader.js", {type: "module"});
+        
+        ws.postMessage({module: "listTeams", data: this.teams});
+        
+        ws.addEventListener("message", (e)=>{
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+
+        document.querySelector("#teams").append(...doc.body.children);
+
+        ws.terminate();
+        })
     }
 
 }

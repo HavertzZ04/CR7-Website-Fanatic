@@ -7,13 +7,13 @@ import myThirdSection from "./components/myThirdSection.js";
 import myFourthSection from "./components/myFourthSection.js";
 import myFifthSection from "./components/myFifthSection.js";
 import mySixthSection from "./components/mySixthSection.js";
-
+import myFooter from "./components/myFooter.js";
 
 myHeader.listarTitle();
-myHeader.listarTeams();
+myHeader.Show();
 
 myBanner.showImage();
-myBanner.showSectionBanner();
+myBanner.Show();
 
 myFirstSection.showStore();
 myFirstSection.showStoreImages();
@@ -30,3 +30,4 @@ myFifthSection.showTexts();
 
 mySixthSection.showTexts();
 
+myFooter.showText();
