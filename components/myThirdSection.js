@@ -1,9 +1,11 @@
 export default {
+    datas : {
     title: "Ballon D'or",
     paragraftOne: "CR7 won his first Ballon d'Or in 2008 when he was still playing for Manchester United. He was also voted the club's player of the year that season and helped them to win three successive league titles between 2007 and 2009.",
     paragraftTwo: "Through a remarkable career with Manchester United, Real Madrid, Juventus, Sporting Lisbon and his nation Portugal, Ronaldo has been an ever-present contender and winner of the Ballon d'Or alongside his great rival Lionel Messi.",
     image: "img/cr7-ball.jpg",
     paragraftThree: "Currently (2023) Cristiano Ronaldo has 5 Ballon d'Or which he won in the following years:",
+    },
 
     table : [
         {
@@ -44,15 +46,16 @@ export default {
         }
     ],
 
-    showMain(){
-        document.querySelector(".golden").insertAdjacentHTML("beforeend",
-        `
-        <h2>${this.title}</h2>
-        <p>${this.paragraftOne}</p>
-        <p>${this.paragraftTwo}</p>
-        <img src="${this.image}" class="col-md-12 img-fluid" alt="" id="cr7-ball">
-        <p>${this.paragraftThree}</p>
-        
-        ` )
+    show(){
+        const ws = new Worker("storage/wsThirdSection.js", {type: "module"});
+
+        ws.postMessage({module: "dataList", data: this.datas});
+        ws.addEventListener("message", (e)=> {
+            let doc = new DOMParser().parseFromString(e.data, "text/html");
+            document.querySelector(".golden").append(...doc.body.children);
+
+        ws.terminate();
+        })
     },
+
 }

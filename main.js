@@ -15,19 +15,18 @@ myHeader.Show();
 myBanner.showImage();
 myBanner.Show();
 
-myFirstSection.showStore();
-myFirstSection.showStoreImages();
+myFirstSection.Show();
 
 myAside.showAside();
 
-mySecondSection.showTexts();
+mySecondSection.show();
 
-myThirdSection.showMain();
+myThirdSection.show();
 
-myFourthSection.showMain();
+myFourthSection.show();
 
-myFifthSection.showTexts();
+myFifthSection.show();
 
-mySixthSection.showTexts();
+mySixthSection.show();
 
-myFooter.showText();
+myFooter.show();
