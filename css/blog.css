@@ -119,11 +119,11 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 /**********************/
 
-.img-banner, #glassesPhoto, #shoesPhoto, #fragrancePhoto, #underwearPhoto, #hotelPhoto, #museumPhoto, #crJunior{
+.img-banner{
   background-size: cover;
 }
 
-.titleShop {
+.titleShop{
   padding: 0 0 0.7rem 0;
 }
 
@@ -155,4 +155,9 @@ footer {
 
 a {
   text-decoration: none;
+}
+
+#imageShops {
+  object-fit:  cover;
+  object-position: top;
 }
