@@ -1,36 +1,10 @@
+import config from "../storage/config.js";
 export default {
-    title: {
-        name: "CR7",
-        href:"#"
-    },
-    teams: [
-        {
-            name: "Sporting CP",
-            href:"https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Sporting_CP"
-        },
-        {
-            name: "Manchester United",
-            href:"https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Manchester_United"
-        },
-        {
-            name: "Real Madrid",
-            href:"https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Real_Madrid"
-        },
-        {
-            name: "Juventus",
-            href:"https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Juventus"
-        },
-        {
-            name: "Al-Nassr FC",
-            href:"https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Al_Nassr"
-        },
-        {
-            name: "Portugal",
-            href:"https://en.wikipedia.org/wiki/Cristiano_Ronaldo#International_career"
-        },
-    ],
+    
 
     listarTitle(){
+        config.dataMyHeader();
+        Object.assign(this, JSON.parse(localStorage.getItem("myHeader")))
         document.querySelector("#title").insertAdjacentHTML("beforeend", `<h1 class="text-center">${this.title.name}</h1>`);
     },
 

@@ -1,10 +1,11 @@
+import config from "../storage/config.js";
 export default {
-    datas : {
-        paragraft : "Web page created as a tribute to my idol CR7, with love: ",
-        top : "Back to top"
-    },
+    
 
     show(){
+        config.dataFooter();
+        Object.assign(this, JSON.parse(localStorage.getItem("footer")))
+
         const ws = new Worker("storage/wsFooter.js", {type: "module"});
     
         ws.postMessage({module: "dataList", data: this.datas});
